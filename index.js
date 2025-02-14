@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Person_1 = require("./Person");
+const Car_1 = require("./Car");
+const Manager_1 = require("./Manager");
+const manager = new Manager_1.Manager();
+const person1 = new Person_1.Person("John", 30);
+const person2 = new Person_1.Person("Jane", 25);
+manager.addPerson(person1);
+manager.addPerson(person2);
+console.log("/n Registered people:");
+manager.listPerson();
+const car1 = new Car_1.Car("Toyota", "Camry", 2020);
+const car2 = new Car_1.Car("Honda", "Civic", 2019);
+manager.addCar(car1);
+manager.addCar(car2);
+console.log("/n Registered cars:");
+manager.listCar();
