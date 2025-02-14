@@ -1,0 +1,17 @@
+# Ignore Node.js specific files and folders
+node_modules/
+
+# Ignore the TypeScript build folder
+dist/
+
+# Ignore TypeScript build info files
+*.tsbuildinfo
+
+# Ignore log files
+*.log
+
+# Ignore IDE configuration folders
+.vscode/
+
+# Ignore the package-lock.json (optional)
+package-lock.json
